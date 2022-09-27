@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: I used the error message 'unitialized constant ToysController::Toys' and found a typo in Toys.create() instead of Toy.create().
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: I used client console error 'Uncaught (in promise) SyntaxError: Unexpected end of JSON input' which lead me to ToysController-#update which lacked a render json:toy 
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: added a destroy route to routes from the error 'ActionController::RoutingError (No route matches [DELETE]'
